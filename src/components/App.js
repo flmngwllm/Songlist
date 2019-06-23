@@ -1,5 +1,5 @@
 import React from 'react';
-import songList from './songList';
+import SongList from './SongList';
 
 
 const App = () => {
@@ -7,7 +7,7 @@ const App = () => {
         return(
             <div>
                 App
-                <songList/>
+                <SongList/>
             </div>
         )
     }
