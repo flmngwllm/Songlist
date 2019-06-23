@@ -20,7 +20,7 @@ class songList extends Component {
     render() {
         // this.props === { songs: state.songs}
         return (
-            <div>
+            <div className= "ui divided list">
                 {this.renderList()}
             </div>
         );
