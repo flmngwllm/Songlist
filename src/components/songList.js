@@ -4,6 +4,7 @@ import {selectSong} from '../actions'
 
 class songList extends Component {
  
+// helper function thatpas
     renderList(){
         return this.props.songs.map((song) => {
             return (
@@ -32,11 +33,13 @@ class songList extends Component {
     }
 }
 
-
+//call state from redux
 const mapStateToProps = (state) => {
     console.log(state)
 
     return { songs: state.songs}
 
 }
+
+//
 export default connect(mapStateToProps, {selectSong: selectSong}) (songList);
